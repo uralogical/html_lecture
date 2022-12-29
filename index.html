@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section>
+						<h2>Web design</h2>
+					</section>
+					<section>実践編🔥</section>
+				</section>
+				<section>
+					<section>
+						<h2>Table of Contents</h2>
+					</section>
+					<section>
+						<h4>第一部</h4>
+						<ul>
+							<li>📝 HTML & CSS</li>
+							<ul>
+								<li>HTMLとは</li>
+								<li>CSSとは</li>
+							</ul>
+						</ul>
+					</section>
+					<section>
+						<h4>第二部</h4>
+						<ul>
+							<li>👩‍💻とりあえずつくってみよ</li>
+							<li>div で遊ぶ</li>
+							<li>完成形</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					第一部
+					<h2>📝 HTML & CSS</h2>
+				</section>
+				<section>
+					<section>
+						<h2>📝HTMLとは</h2>
+						HyperTextMarkupLanguage の略<br>
+						構造をあらわす
+					</section>
+					<section>
+						<h4>構造...？🤔</h4>
+						<img src="./images/box.png" alt="">
+					</section>
+				</section>
+				<section>
+					<h4>HTMLタグを使って構造をあらわす</h4>
+					&lt;div&gt;, &lt;h1&gt; みたいなやつ
+				</section>
+				<section>
+					<section>
+						たとえば
+					</section>
+					<section>
+						<h4>かんたんなページ</h4>
+						<img src="./images/before.png" alt="">
+					</section>
+					<section>
+						👇HTMLを見てみる👇
+						<pre><code data-trim>
+							&lt;html&gt;
+								&lt;body&gt;
+									<div>
+										<h1>最近観た映画</h1>
+										<ul>
+											<li>ショーシャンクの空に</li>
+											<li>SAW</li>
+											<li>ミスト</li>
+										</ul>
+									</div>
+								&lt;/body&gt;
+							&lt;/html&gt;
+						</code></pre>
+					</section>
+					<section>
+						タグを使って構造を宣言している
+						<pre><code data-trim data-line-numbers="1|2|3|4|5-9">
+							&lt;html&gt; <!-- HTML 書く宣言 -->
+								&lt;body&gt; <!-- メインコンテンツ書く宣言 -->
+									<div> <!-- まとまりを表す宣言 -->
+										<h1>最近観た映画</h1> <!-- タイトルの宣言 -->
+										<ul> <!-- リストの宣言 -->
+											<li>ショーシャンクの空に</li> <!-- リスト項目の宣言 -->
+											<li>SAW</li>
+											<li>ミスト</li>
+										</ul>
+									</div>
+								&lt;/body&gt;
+							&lt;/html&gt;
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<h4>HTML でできること</h4>
+					<ul>
+						<li>HTMLタグを使って構造を表現する</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>📝CSSとは</h2>
+						CascadingStyleSheet の略<br>
+						デザインをあらわす
+					</section>
+					<section>
+						<h4>デザイン...？🤔</h4>
+						<img src="./images/round.png" alt="">
+					</section>
+				</section>
+				<section>
+					<h4>CSS を使ってデザインを当てていく</h4>
+					<ul>
+						<li>形を変える</li>
+						<li>色を変える</li>
+						<li>大きさを変える</li>
+						<li>配置を変える</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						たとえば
+					</section>
+					<section>
+						<h4>かんたんなページ(再掲)</h4>
+						<img src="./images/before.png" alt="">
+					</section>
+					<section>
+						✨デザインを当ててみる
+					</section>
+					<section>
+						<h4>かんたんなページ</h4>
+						<img src="./images/after.png" alt="">
+					</section>
+					<section>
+						👇CSSを見てみる👇
+						<pre><code data-trim class="language-css">
+						.container {
+							width: 300px;
+						}
+						.title {
+							width: 100%;
+							display: flex;
+							justify-content: center;
+						}
+						h1 {
+							font-size: 20px;
+						}
+						.list {
+							display: flex;
+							justify-content: center;
+							width: 100%;
+						}
+						.selected {
+							color: #00A4AC;
+							text-decoration: underline;
+						}
+						ul {
+							margin-top: 10px;
+							list-style: none;
+						}
+						li {
+							width: 100%;
+						}
+						</code></pre>
+					</section>
+					<section>
+						くわしくはのちほど
+					</section>
+				</section>
+				<section>
+					<h4>第一部</h4>
+					〜完〜
+				</section>
+				<section>
+					第二部
+					<h2>👩‍💻とりあえずつくってみよ</h2>
+				</section>
+				<section>
+					<h4>div で遊ぶ</h4>
+					<ul>
+						<li>名前をつける</li>
+						<li>色を変える</li>
+						<li>大きさを変える</li>
+						<li>形を変える</li>
+						<li>配置を変える</li>
+					</ul>
+				</section>
+				<section>
+					<section>ひとまず 🟥 をつくる</section>
+					<section>
+						✍️✍️✍️
+						<pre><code data-trim>
+							<div></div>
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>📛名前をつける</h4>
+					</section>
+					<section>
+						<h4>📛名前をつける</h4>
+						<ul>
+							<li>class</li>
+							<ul><li>👉 汎用的な名前をつけるときに使う</li></ul>
+							<ul>
+								<li>. を使って指定する</li>
+							</ul>
+							<li>id</li>
+							<ul><li>👉 一意の名前を付けるときに使う</li></ul>
+							<ul>
+								<li># を使って指定する</li>
+							</ul>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>🎨色を変える</h4>
+					</section>
+					<section>
+						<h4>🎨色を変える</h4>
+						<ul>
+							<li>background-color を使う</li>
+							<li>代表的な名前での指定</li>
+							<ul><li>👉 blue, yellow など</li></ul>
+							<li>カラーコードでの指定</li>
+							<ul><li>👉 #333, #00A4AC など</li></ul>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>🔎大きさを変える</h4>
+					</section>
+					<section>
+						<h4>🔎大きさを変える</h4>
+						<ul>
+							<li>width, height を使う</li>
+							<ul>
+								<li>👉 px, %, vh などで指定可能</li>
+							</ul>
+						</ul>
+					</section>
+					<section>やってみよ👏</section>
+				</section>
+				<section>
+					<section>
+						<h4>🔴形を変える</h4>
+					</section>
+					<section>
+						<h4>🔴形を変える</h4>
+						<ul>
+							<li>🟥 👉👉👉 🔴</li>
+							<li>border-radius を使う</li>
+							<li>px, % での指定</li>
+						</ul>
+					</section>
+					<section>やってみよ👏</section>
+				</section>
+				<section>
+					<section>
+						<h4>🚌配置を変える</h4>
+					</section>
+					<section>
+						<h4>🚌配置を変える</h4>
+						<ul>
+							<li>position を使う</li>
+							<li>relative, absoluteでの指定</li>
+							<li>display: flex を使う</li>
+							<ul><li>justify-content: center;</li></ul>
+							<ul><li>align-items: center;</li></ul>
+						</ul>
+					</section>
+					<section>やってみよ👏</section>
+				</section>
+				<section>
+					html/practice/index.html を開こう！
+				</section>
+				<section>
+					<section>
+						ここまでくれば...
+					</section>
+					<section>
+						<img src="/images/summer.png" alt="">
+					</section>
+					<section>
+						<img src="/images/profile.png" alt="">
+					</section>
+				</section>
+				<section>
+					<h4>第二部</h4>
+					〜完〜
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
