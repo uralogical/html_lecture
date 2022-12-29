@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer</title>
+</head>
+<body class="body">
+  <section class="sideContent">
+    <div class="logoContainer">
+      <img class="logo" src="./img/flower.png" alt="">
+    </div>
+    <div class="nameContainer">
+      <span class="name">M.Atsumi</span>
+    </div>
+    <div class="menu">
+      <ul class="menuList">
+        <li class="menuItem selected">Home</li>
+        <li class="menuItem">About</li>
+        <li class="menuItem">Photo</li>
+        <li class="menuItem">Blog</li>
+        <li class="menuItem">Work</li>
+      </ul>
+    </div>
+    <div class="footer">
+      <span class="footerItem">&copy; 2021 All rights reserved</span>
+      <span class="footerItem">Designed by atmn</span>
+    </div>
+  </section>
+  <main class="main">
+    <div class="eyecatchContainer">
+      <div class="imageContainer">
+        <img class="eyecatch" src="./img/tower.jpg" alt="">
+      </div>
+      <div class="eyecatchTitle">
+        全部、<br>夏のせい
+      </div>
+    </div>
+  </main>
+</body>
+</html>
+
+<style>
+html,body,h1,h2,h3,p,ul,li{
+  padding: 0;
+  margin: 0;
+  font-family: "Meiryo","メイリオ","YuGothic","游ゴシック体", sans-serif, system-ui;
+}
+.body {
+  width: 100%;
+  display: flex;
+}
+.sideContent {
+  width: 250px;
+  height: 100vh;
+  background-color: #eee;
+}
+.logoContainer {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+.nameContainer {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.name {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+.menu {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menuList {
+  list-style: none;
+}
+.menuItem {
+  padding: 8px 0;
+  text-align: center;
+}
+.selected {
+  color: #00A4AC;
+}
+.main {
+  position: relative;
+  width: calc(100% - 200px);
+}
+.eyecatchContainer {
+  width: 100%;
+  height: 100vh;
+}
+.eyecatchTitle {
+  width: 500px;
+  opacity: 0.8;
+  font-family: "游明朝体","YuMincho";
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  font-size: 120px;
+  font-weight: bold;
+}
+.eyecatch {
+  opacity: 0.8;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.footer {
+  width: 100%;
+}
+.footerItem {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: #aaa;
+}
+</style>

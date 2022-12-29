@@ -1,0 +1,385 @@
+<html>
+  <body>
+    <div class="canvas">
+      <div class="device">
+        <div class="muteButton"></div>
+        <div class="volumeUp"></div>
+        <div class="volumeDown"></div>
+        <div class="sensorWrapper">
+          <div class="irWrapper">
+            <div class="ir"></div>
+          </div>
+          <div class="perceptionWrapper">
+            <div class="camera"></div>
+            <div class="speaker"></div>
+          </div>
+        </div>
+        <div class="screenWrapper">
+          <div class="screen">
+            <div class="powerOff" id="powerOff"></div>
+            <div class="powerOn" id="powerOn">
+              <div class="header"></div>
+              <div class="main">
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contentWrapper">
+                  <div class="content">
+                    <div class="profile"></div>
+                    <div class="textBox">
+                      <div class="shortText"></div>
+                      <div class="longText"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="homeButtonWrapper">
+          <div class="outerHomeButton">
+            <div class="homeButton"></div>
+          </div>
+        </div>
+        <div class="powerButton" id="powerButton"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  const powerButton = document.getElementById('powerButton')
+  powerButton.addEventListener('click', togglePower)
+
+  let power = 'on'
+  const powerOff = document.getElementById('powerOff')
+  const powerOn = document.getElementById('powerOn')
+
+  function togglePower() {
+    if (power === 'on') {
+      powerOff.style.display = 'block'
+      powerOn.style.display = 'none'
+      power = 'off'
+    } else {
+      powerOff.style.display = 'none'
+      powerOn.style.display = 'block'
+      power = 'on'
+    }
+  }
+</script>
+<style>
+html, body {
+  padding: 0;
+  margin: 0;
+}
+.canvas {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.device {
+  margin-top: 30px;
+  width: 265px;
+  height: 538px;
+  border-radius: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px #d6d6d6;
+  position: relative;
+}
+.muteButton {
+  position: absolute;
+  top: 60px;
+  left: -1px;
+  background-color: #ffffff;
+  width: 4px;
+  height: 10px;
+  border-radius: 2px;
+  box-shadow: 0 0 20px #d6d6d6;
+}
+.volumeUp {
+  position: absolute;
+  top: 100px;
+  left: -1px;
+  background-color: #ffffff;
+  width: 4px;
+  height: 30px;
+  border-radius: 2px;
+  box-shadow: 0 0 20px #d6d6d6;
+}
+.volumeDown {
+  position: absolute;
+  top: 140px;
+  left: -1px;
+  background-color: #ffffff;
+  width: 4px;
+  height: 30px;
+  border-radius: 2px;
+  box-shadow: 0 0 20px #d6d6d6;
+}
+.sensorWrapper {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.irWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.ir {
+  background-color: #c5c5c5;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+}
+.perceptionWrapper {
+  width: 100%;
+  height: 10px;
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.camera {
+  background-color: #c5c5c5;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 32px);
+}
+.speaker {
+  background-color: #eee;
+  width: 42px;
+  height: 4px;
+  border-radius: 2px;
+}
+.screenWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.screen {
+  background-color: #f5f5f5;
+  width: 250px;
+  height: 428px;
+}
+.powerOff {
+  display: none;
+  animation: fadeIn 0.4s ease;
+  background-color: black;
+  width: 250px;
+  height: 428px;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.header {
+  background-color: #2665f6;
+  width: 100%;
+  height: 40px;
+}
+.main {
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 388px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.contentWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: 246px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.profile {
+  background-color: #dedede;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.textBox {
+  height: 100%;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.shortText {
+  background-color: #dedede;
+  width: 90px;
+  height: 10px;
+}
+.longText {
+  background-color: #dedede;
+  margin-top: 10px;
+  width: 150px;
+  height: 10px;
+}
+.homeButtonWrapper {
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outerHomeButton {
+  background-color: #dedede;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeButton {
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.powerButton {
+  position: absolute;
+  top: 80px;
+  left: calc(100% - 2px);
+  background-color: #ffffff;
+  width: 4px;
+  height: 30px;
+  border-radius: 2px;
+}
+</style>

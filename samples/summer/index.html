@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer</title>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="logo">
+      SUMMER
+    </div>
+    <div class="menu">
+      <ul class="menuList">
+        <li class="menuItem">About</li>
+        <li class="menuItem">Photo</li>
+        <li class="menuItem">Blog</li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <div class="imageContainer">
+      <div class="eyecatchContainer">
+        <div class="eyecatchTitle">
+          SUMMER<br>OF<br>LOVE
+        </div>
+      </div>
+      <img class="image" src="./img/summer.jpg" alt="">
+    </div>
+    <div class="contentWrapper">
+      <div class="content">
+        <div class="leftPane">
+          <h2>What is Summer Of Love?</h2>
+          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolor fugiat sint ratione sit natus nulla vel quaerat delectus a perferendis in nam vero porro suscipit velit earum, eum magnam?</span>
+        </div>
+        <div class="rightPane">
+          <h2>Summer Of Love is...</h2>
+          <span> The Summer of Love was a social phenomenon that occurred during the summer of 1967, when as many as 100,000 people,
+          mostly young people sporting hippie fashions of dress and behavior, converged in San Francisco's neighborhood of
+          Haight-Ashbury. More broadly, the Summer of Love encompassed the hippie music, hallucinogenic drugs, anti-war, and
+          free-love scene throughout the West Coast of the United States, and as far away as New York City.</span>
+          </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <span class="footerItem">&copy; 2021 All rights reserved</span>
+    <span class="footerItem">Designed by atmn</span>
+  </footer>
+</body>
+</html>
+
+<style>
+html,body,h1,h2,h3,p,ul,li{
+  padding: 0;
+  margin: 0;
+  font-family: "Meiryo","メイリオ","YuGothic","游ゴシック体", sans-serif, system-ui;
+}
+.body {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+}
+.menu {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.menuList {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.menuItem {
+ width: 100px; 
+}
+.main {
+  width: 100%;
+}
+.imageContainer {
+  width: 100%;
+  height: 480px;
+  display: flex;
+}
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+.eyecatchContainer {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  height: 100px;
+}
+.eyecatchTitle {
+  opacity: 0.4;
+  color: #fff;
+  font-size: 64px;
+  font-weight: bold;
+}
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: 800px;
+  display: flex;
+  padding: 20px;
+}
+.leftPane {
+  width: 50%;
+  padding: 10px;
+}
+.rightPane {
+  width: 50%;
+  padding: 10px;
+} 
+.footer {
+  width: 100%;
+
+}
+.footerItem {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: #aaa;
+}
+</style>
